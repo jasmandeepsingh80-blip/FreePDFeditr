@@ -1,5 +1,5 @@
 'use strict';
-pdfjsLib.GlobalWorkerOptions.workerSrc='./vendor/pdf.worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc='./pdf.worker.min.js';
 const $=id=>document.getElementById(id), $$=s=>[...document.querySelectorAll(s)];
 const state={files:[],nextId:1,target:'custom',orientation:'portrait',busy:false,stop:false,visible:40,results:[],outputBytes:0,preview:null,previewPage:1,previewToken:0};
 const OUTPUT_BUDGET=256*1024*1024,MAX_FILE=100*1024*1024;
